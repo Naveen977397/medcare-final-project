@@ -1,0 +1,162 @@
+.login {
+    width: 100vw;
+    flex-grow: 1;
+    position: relative;
+    background-image: url('/login.svg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 560px;
+    padding: 30px 24px 30px 24px;
+    border-radius: 16px;
+    background: #EFEFEF(255, 255, 255, 0.2); 
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #efefef(255, 255, 255, 0.3);
+}
+
+.login form{
+    width: 512px;
+    height: 420px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+
+.title {
+    height: 39px;
+    width: 91px;
+    font-family: var(--primary-font);
+    font-size: 32px;
+    line-height: 100%;
+    font-weight: 500px;
+    letter-spacing: -1%;
+    color: #0E2515;
+}
+
+.signup-text {
+    
+    width: 512px;
+    height: 38px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    
+}
+.signup-text p{
+    width: 306px;
+    height: 20px;
+    gap: 16px;
+}
+
+.signup-link {
+    color: #0b3d2e;
+    font-weight: bold;
+    text-decoration: none;
+}
+.email{
+    width: 512px;
+    height: 92px;
+    gap: 12px;
+}
+
+.email label{
+    width: 46px;
+    height: 20px;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -1%;
+    color: #8C8C8C;
+}
+.password{
+    width: 512px;
+    height: 102px;
+    padding-bottom: 10px;
+    gap: 12px;
+}
+.password label{
+    width: 78px;
+    height: 20px;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -1%;
+    color: #8C8C8C;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    width: 512px;
+    height: 60px;
+    padding: 20px 24px 20px 24px;
+    border-radius: 10px;
+    background: white;
+    color: #F5F5F5;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    margin: 12px 0px;
+}
+
+.icon {
+    font-size: 16px;
+    color: #8c8c8c;
+    margin-right: 10px;
+}
+
+.inputGroup input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+.button {
+    width: 512px;
+    height: 60px;
+    padding: 20px 48px 20px 48px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    border: none;
+}
+
+.loginButton {
+    background-color: #1C4A2A;
+    color: white;
+}
+
+.resetButton {
+    background-color: #C6B09A;
+    color: white;
+}
+
+.toggleHidden {
+    opacity: 0.5;  
+    cursor: pointer;
+}
+
+.toggleVisible {
+    opacity: 1;  
+    cursor: pointer;
+}
+
+
+
+
+
+
+

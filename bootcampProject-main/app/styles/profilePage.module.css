@@ -1,0 +1,122 @@
+.card {
+    width: 100%;
+    max-width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+
+.imageFrame img {
+    border-radius: 50%;
+}
+
+
+.titleFrame h6 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.role-exp {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.role, .experience {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.ratingContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ratingText p {
+    font-weight: bold;
+}
+
+.stars {
+    display: flex;
+}
+
+.filledstar {
+    filter: brightness(1);
+}
+
+.emptystar {
+    filter: brightness(0.6);
+}
+
+
+.description, .location, .degree {
+    margin-top: 15px;
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+}
+
+
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+    width: 90%;
+    max-width: 400px;
+}
+
+.button:hover {
+    background-color: gray;
+}
+
+.loading, .error, .notFound {
+    text-align: center;
+    font-size: 22px;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .Title {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .role-exp {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .description, .location, .degree {
+        font-size: 16px;
+    }
+}

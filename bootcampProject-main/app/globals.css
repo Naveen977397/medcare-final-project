@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height : 100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+:root{
+    --primary-color:#1C4A2A;
+    --secondary-color:white;
+    --primary-font: Montserrat;
+}
