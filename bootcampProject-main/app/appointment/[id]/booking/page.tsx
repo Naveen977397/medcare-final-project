@@ -191,9 +191,13 @@ const isSlotDisabled = (slot: string) => bookedSlots.includes(slot);
                                 {morning.map(slot => (
                                     <button 
                                         key={slot}
-                                        onClick={() => setTime(slot)}
+                                        onClick={() => {if(!isSlotDisabled(slot)){
+                                            setTime(slot);
+                                        }}}
                                         disabled={isSlotDisabled(slot)}
-                                        style={{ backgroundColor: isSlotDisabled(slot) ? "gray" : "white" }}
+                                        style={{ backgroundColor: isSlotDisabled(slot) ? "gray" : "white",
+                                                  cursor: isSlotDisabled(slot) ? "not-allowed" : "pointer"
+                                         }}
                                     >
                                         {slot}
                                     </button>
@@ -213,9 +217,13 @@ const isSlotDisabled = (slot: string) => bookedSlots.includes(slot);
                                 {afternoon.map(slot => (
                                     <button 
                                         key={slot}
-                                        onClick={() => setTime(slot)}
+                                        onClick={() => {if(!isSlotDisabled(slot)){
+                                            setTime(slot);
+                                        }}}
                                         disabled={isSlotDisabled(slot)}
-                                        style={{ backgroundColor: isSlotDisabled(slot) ? "gray" : "white" }}
+                                        style={{ backgroundColor: isSlotDisabled(slot) ? "gray" : "white",
+                                                 cursor: isSlotDisabled(slot) ? "not-allowed" : "pointer"
+                                         }}
                                     >
                                         {slot}
                                     </button>

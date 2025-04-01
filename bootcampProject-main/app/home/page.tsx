@@ -1,5 +1,5 @@
 'use client'
-import Image from 'next/image';
+import Image from 'next/Image';
 import styles from '../styles/home.module.css'
 import Link from 'next/link'
 import {useLogin} from '@/app/context/loginContext'
